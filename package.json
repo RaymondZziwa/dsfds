@@ -1,0 +1,28 @@
+{
+  "name": "erimu",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "scripts": {
+    "dev": "nodemon server.js",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RaymondZziwa/Erimu-woods.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RaymondZziwa/Erimu-woods/issues"
+  },
+  "homepage": "https://github.com/RaymondZziwa/Erimu-woods#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nodemailer": "^6.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

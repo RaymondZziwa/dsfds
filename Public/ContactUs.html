@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Roboto+Mono:ital,wght@1,100&display=swap"
+      rel="stylesheet"
+    />
+    <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA8FkDAgCsuqbkepJUreKuErRxL1B2qtFI&callback=initMap&libraries=&v=weekly"
+    async
+    ></script>
+    <script src="static/app.js" async></script>
+    <!--<script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript">
+      function sendEmail() {
+        Email.send({
+          Host: "smtp.gmail.com",
+          Username: "developerraymond6@gmail.com",
+          Password: "Bomboclatman#256",
+          To: 'developerraymond6@gmail.com',
+          From: "raymondzian@gmail.com",
+          Subject: "Sending Email using javascript",
+          Body: "Well that was easy!!",
+        })
+          .then(function (message) {
+            alert("mail sent successfully")
+          });
+      }
+    </script>-->
+    <style>
+       html,
+      body {
+        background: url(/Images/nathan-oakley--peWKMDCyw4-unsplash.jpg);
+        background-size: cover;
+        margin: 0px;
+        padding: 0px;
+        background-color: #141414;
+        overflow-x: hidden;
+      }
+      .footer {
+        padding: 0;
+        background-color: #141414;
+        opacity: 80%;
+      }
+       #social {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: -50px;
+        width: 70%;
+      }
+      .container-fluid {
+        width: 100%;
+        padding: 0;
+      }
+      .navbar {
+        margin: 0;
+        padding: 0;
+      }
+      h6 {
+        text-align: center;
+        font-family: "Open Sans Condensed", sans-serif;
+        font-size: 1.5rem;
+        color: #565bf0;
+      }
+      h3 {
+        font-family: "Roboto Mono", monospace;
+        font-weight: bolder;
+        color: darkgoldenrod;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="navbar" id="navbar">
+        <nav
+          class="navbar navbar-expand-lg navbar-light bg-light"
+          style="width: 100%; opacity: 70%"
+        >
+          <a class="navbar-brand" href="#">
+            <img
+              src="/Images/logo.gif"
+              alt="logo"
+              style="
+                height: 30px;
+                margin-bottom: 5px;
+                border-radius: 100%;
+                margin-left: 10px;
+                z-index: 2;
+              "
+            />
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavAltMarkup"
+            aria-controls="navbarNavAltMarkup"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav" style="margin-left: 70%">
+              <a class="nav-link "  href="index.html"
+                >Home</a
+              >
+              <a class="nav-link" href="Showroom.html">Showroom</a>
+              <a class="nav-link" href="AboutUs.html">About</a>
+              <a class="nav-link active" aria-current="page" href="ContactUs.html">Contact Us</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+
+      <div class="main">
+        <div 
+          class="row"
+          style="
+          background-color: rgb(39, 35, 29);
+          height: 15%;
+          text-align: center;
+          opacity: 70%;
+          "
+        >
+          <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+            <img src="/Images/logo.gif" alt="logo" style="border-radius: 100%;margin-top: 15px;">
+            <h2
+            style="
+              font-style: italic;
+              text-align: center;
+              font-size: 1.8rem;
+              color: whitesmoke;
+              margin-top: 20px;
+            "
+            >Do you have any inquiries?Do not hesitate to talk to us.</h2>
+          </div>
+        </div>
+        <div 
+          class="row"
+          style="
+            margin-top: 40px;
+            margin-left:1%;
+          "
+        >
+          <div 
+            class="col-sm-12 col-md-5 col-lg-5 col-xl-5"
+            style="
+            background-color: whitesmoke;
+            opacity: 80%;
+            margin-top: 40px;
+            margin-left: 10px;
+            "
+            >
+            <h4
+              style="
+                text-align: center;
+              "
+            >Send Us A Message<img src="/Images/send.png" alt="" style="height: 30px;"></h4>
+              <form class="contact-form">
+                <div class="row">
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="First name" name="name" id="fname" aria-label="First name" reuqired>
+                  </div>
+                  <div class="col">
+                    <input type="text" class="form-control" placeholder="Last name" name="name"  id="lname" aria-label="Last name" required>
+                  </div>
+                </div>
+                <div 
+                  class="row"
+                  style="margin-top: 20px;"
+                >
+                  <div class="col">
+                    <input type="email" class="form-control" placeholder="Email" name="email" id="mail" aria-label="Email" required>
+                  </div>
+                  <div class="col">
+                    <input type="number" class="form-control" placeholder="Phone number" name="number" id="phonenumber" aria-label="Phone number" min="0" required>
+                  </div>
+                </div>
+                <div 
+                  class="row"
+                  style="margin-top: 20px;"
+                >
+                  <div class="col">
+                    <textarea type="text" class="form-control" placeholder="Message" name="message" id="msg" aria-label="Message" required></textarea>
+                  </div>
+                </div>
+                <input type="submit" class="btn btn-outline-success" style="margin-top: 10px;margin-bottom: 10px;" value="Send Message">
+              </form>
+          </div>
+
+
+          <div class="col-sm-12 col-md-5 col-lg-5 col-xl-5">
+            <h3 
+              style="
+              text-align: center;
+              "
+            >
+            Our Head Quarters Location
+            </h3>
+            <div id="map" style="width: 100%;height: 300px;">
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--footer-->
+  <div class="footer" style="color: whitesmoke">
+    <div class="row" id="row1" style="margin-top: 50px">
+      <div
+        class="col-sm-12 col-md-12 col-lg-12 col-xl-12"
+        style="margin-top: 10px"
+      >
+        <img
+          src="/Images/logo.gif"
+          alt="logo"
+          style="height: 50px; margin-bottom: 5px; border-radius: 100%"
+        />
+        <a href="#navbar"
+          ><img
+            src="/Images/up.png"
+            alt="top"
+            style="height: 50px; float: right; margin-bottom: 5px"
+        /></a>
+      </div>
+    </div>
+    <div class="row" style="text-align: center">
+      <div class="col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <h3>Contact Our Sales Team</h3>
+        <p>
+          <img
+            src="/Images/phone-call.png"
+            alt="Phone number"
+            style="height: 30px"
+          />
+          +256-701 222 247
+        </p>
+        <p>
+          <img
+            src="/Images/phone-call.png"
+            alt="Phone number"
+            style="height: 30px"
+          />
+          +256-701 222 201
+        </p>
+        <p>
+          <img
+            src="/Images/phone-call.png"
+            alt="Phone number"
+            style="height: 30px"
+          />
+          +256-783 116 862
+        </p>
+        <p style="text-decoration: none">
+          <img src="/Images/email.png" alt="email" style="height: 30px" />
+          erimuug@gmail.com
+        </p>
+      </div>
+    </div>
+    <div class="row" style="text-align: center">
+      <h3 style="text-align: center">Our Locations</h3>
+      <div
+        class="col-sm-12 col-md-6 col-lg-3 col-xl-3"
+        onclick="showLocation()"
+      >
+        <h6>Kampala Office & Showroom</h6>
+        <p>Plot 20/3, Jinja Road. <br />Madhvani Foundation Building</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <h6>Namagoma Office & Showroom</h6>
+        <p>
+          12 kms along Kampala -Masaka Highway Plot 174-178 P.O. Box 27527
+          Kampala (U)
+        </p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <h6>Ntinda Office & Showroom</h6>
+        <p>Plot 216, Block 3697 & 1303 Kiwanuka Road</p>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 col-xl-3">
+        <h6>Kansanga Office & Showroom</h6>
+        <p>Plot 233, Block 254, Ggaba Rd.</p>
+      </div>
+    </div>
+    <div
+      class="row"
+      id="social"
+      style="
+        border-top: 2px solid whitesmoke;
+        position: relative;
+        text-align: center;
+      "
+    >
+      <div
+        class="col-sm-12 col-md-12 col-lg-12 col-xl-12"
+        style="text-align: center; margin-top: 5px"
+      >
+        <a href="#"
+          ><img
+            src="/Images/facebook.png"
+            alt="facebook"
+            style="height: 50px"
+        /></a>
+        <a href="#"
+          ><img
+            src="/Images/instagram.png"
+            alt="instagram"
+            style="height: 50px"
+        /></a>
+        <a href="#"
+          ><img
+            src="/Images/twitter.png"
+            alt="twitter"
+            style="height: 50px"
+        /></a>
+        <a href="#"
+          ><img
+            src="/Images/whatsapp.png"
+            alt="whatsapp"
+            style="height: 50px"
+        /></a>
+        <p>Copyright &#169; Erimu 2021 Privacy Policy</p>
+        <a href="#" style="text-decoration: none">
+          <p
+            style="
+              color: rgb(39, 32, 23);
+              font-size: 0.8rem;
+              font-style: italic;
+              font-weight: bolder;
+            "
+            onclick="redirect()"
+          >
+            Powered by ZziwaTech Solutions
+          </p>
+        </a>
+      </div>
+      <!--End of footer-->
+    </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+      integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+      integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function initMap() {
+        // The location of Erimu head quarters
+        var Erimu = { lat: 0.31458561590683776, lng:  32.59007336787472};
+        // The map, centered at Erimuhead quarters
+          var map = new google.maps.Map(document.getElementById("map"), {
+          zoom: 15,
+          center: Erimu,
+        });
+        // The marker, positioned at Erimu head quarters 0.31458561590683776, 32.59007336787472
+        var marker = new google.maps.Marker({
+          position: Erimu,
+          map: map,
+        });
+      }
+    </script>
+  </body>
+</html>
+
